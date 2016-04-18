@@ -1,14 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -32,11 +32,11 @@ footer {
 
 .jumbotron {
   padding: 10px;
-  background-color: lightskyblue;
+  background-color: skyblue;
 }
 
-hr {
+/*hr {
     color: black;
     background-color: black;
     height: 25px;
-}
+}*/
