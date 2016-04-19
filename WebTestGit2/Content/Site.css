@@ -1,14 +1,15 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    /*background-color: whitesmoke;*/
+    background-color: whitesmoke;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -40,3 +41,15 @@ footer {
     background-color: black;
     height: 25px;
 }*/
+
+article{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.Employe{
+    border: solid thin;
+    border-radius: 10px;
+    border-color: lightgrey;
+    padding: 10px 5px 5px 5px;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Pil PC-reperation</title>
+    <title>@ViewBag.Title - Pils computer service</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -18,13 +18,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    @Html.ActionLink("Pil PC-reperation", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("PCS.DK", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        @*<li>@Html.ActionLink("Forside", "Index", "Home")</li>*@
+                        <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                        <li>@Html.ActionLink("Om", "About", "Home")</li>
+                        <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                     </ul>
                     @*@Html.Partial("_LoginPartial")*@
                 </div>
@@ -33,23 +34,35 @@
         @RenderBody()
         <hr />
         <footer>
-            <div class="col-sm-4">
-                <h3>Services</h3>
-                <ul>
-                    <li>Installere din nye PC/bærbar</li>
-                    <li>Fejl finder på din PC/Bærbar</li>
-                </ul>
-            </div>
-            <div class="col-sm-4 text-center">
-                <h3>Priser</h3>
-                
-            </div>
-            <div class="col-sm-4 text-right">
-                <h3>Kontakt os</h3>
-                <address>
-                    Sanderumvej 98<br />5250 Odense SV
-                </address>
-                
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Services</h3>
+                    <p>
+                        Installere din nye PC/bærbar<br />
+                        Opgradering af hardware i din PC<br />
+                        Fejl finder på din PC/Bærbar<br />
+                        Opsætning af dit trådløse netværk
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Support</h3>
+                    <p>
+                        <a href="/Home/Contact">Kontakt os</a><br />
+                        FAQ
+                    </p>
+
+                </div>
+                <div class="col-sm-2">
+                    <h3>Kontakt os</h3>
+                    <address>
+                        Sanderumvej 98<br />
+                        5250 Odense SV<br />
+                        <abbr title="Mobil">Tlf:</abbr>
+                        31 13 73 04<br />
+                        <a href="MailTo:rasmus.pil@live.dk">rasmus.pil@live.dk</a>
+                    </address>
+
+                </div>
             </div>
 
         </footer>
